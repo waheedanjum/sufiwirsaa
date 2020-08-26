@@ -1,11 +1,27 @@
-<nav class="col-1">Nav</nav>
-<div class="col-2">
-  <header>Header</header>
-  <main class="content">
-    <article>Article</article>
-    <aside>Aside</aside>
-  </main>
-  <footer>Footer</footer>
-</div>
+<div>
+  <div>
+    <mat-toolbar role="heading" color="green">
+      <mat-toolbar-row>
+        <button mat-icon-button>
+          <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+        </button>
+        <h1>Sufi Wirsa</h1>
+        <span class="menu-spacer"></span>
+        <div>
+          <a mat-button [routerLink]="'/activities'"> Activities </a>
+          <a mat-button [routerLink]="'/accounts'"> Sufi Poetry </a>
+          <a mat-button [routerLink]="'/create-account'"> Sharoo e Naat </a>
+          <a mat-button [routerLink]="'/contacts'"> Pearls of Wisom </a>
+          <a mat-button [routerLink]="'/create-contact'"> Sufi Chain </a>
+        </div>
 
-<router-outlet></router-outlet>
+        <div class="login">
+          <a mat-button [routerLink]="'/activities'"> Login </a>
+          <!-- <a mat-button [routerLink]="'/activities'"> Logout </a> -->
+        </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </div>
+
+  <div><router-outlet></router-outlet></div>
+</div>
