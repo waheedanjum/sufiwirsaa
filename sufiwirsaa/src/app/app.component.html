@@ -1,5 +1,3 @@
-<div>
-  <div>
     <mat-toolbar role="heading" color="green">
       <mat-toolbar-row>
         <button mat-icon-button>
@@ -9,19 +7,23 @@
         <span class="menu-spacer"></span>
         <div>
           <a mat-button [routerLink]="'/activities'"> Activities </a>
-          <a mat-button [routerLink]="'/accounts'"> Sufi Poetry </a>
+          <a mat-button [routerLink]="'/accounts'"> Poetry </a>
           <a mat-button [routerLink]="'/create-account'"> Sharoo e Naat </a>
-          <a mat-button [routerLink]="'/contacts'"> Pearls of Wisom </a>
+          <a mat-button [routerLink]="'/contacts'"> Pearls </a>
           <a mat-button [routerLink]="'/create-contact'"> Sufi Chain </a>
+          <a mat-button [routerLink]="'/create-contact'"> Books </a>
         </div>
+        <span class="example-spacer"></span>
 
-        <div class="login">
-          <a mat-button [routerLink]="'/activities'"> Login </a>
-          <!-- <a mat-button [routerLink]="'/activities'"> Logout </a> -->
-        </div>
+        <a mat-button [routerLink]="'/activities'">
+          <span class="material-icons">
+            login
+          </span></a
+        >
+        <!-- <a mat-button [routerLink]="'/activities'"> Logout </a> -->
       </mat-toolbar-row>
     </mat-toolbar>
-  </div>
+  
 
   <div><router-outlet></router-outlet></div>
-</div>
+

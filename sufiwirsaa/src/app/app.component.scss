@@ -1,13 +1,11 @@
 .mat-toolbar-multiple-rows {
     display: flex;
     box-sizing: border-box;
-    flex-direction: column;
     width: 100%;
     background: forestgreen;
+    flex-wrap: wrap;
 }
 
-.login {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
+.example-spacer {
+    flex: 1 1 auto;
 }
