@@ -1,29 +1,27 @@
-    <mat-toolbar role="heading" color="green">
-      <mat-toolbar-row>
-        <button mat-icon-button>
-          <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
-        </button>
-        <h1>Sufi Wirsa</h1>
-        <span class="menu-spacer"></span>
-        <div>
-          <a mat-button [routerLink]="'/activities'"> Activities </a>
-          <a mat-button [routerLink]="'/accounts'"> Poetry </a>
-          <a mat-button [routerLink]="'/create-account'"> Sharoo e Naat </a>
-          <a mat-button [routerLink]="'/contacts'"> Pearls </a>
-          <a mat-button [routerLink]="'/create-contact'"> Sufi Chain </a>
-          <a mat-button [routerLink]="'/create-contact'"> Books </a>
-        </div>
-        <span class="example-spacer"></span>
+<mat-toolbar role="heading" color="green">
+  <mat-toolbar-row>
+    <button mat-icon-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <h1>Sufi Wirsa</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/activities'"> Activities </a>
+      <a mat-button [routerLink]="'/accounts'"> Poetry </a>
+      <a mat-button [routerLink]="'/create-account'"> Sharoo e Naat </a>
+      <a mat-button [routerLink]="'/contacts'"> Pearls </a>
+      <a mat-button [routerLink]="'/create-contact'"> Sufi Chain </a>
+      <a mat-button [routerLink]="'/create-contact'"> Books </a>
+    </div>
+    <span class="example-spacer"></span>
 
-        <a mat-button [routerLink]="'/activities'">
-          <span class="material-icons">
-            login
-          </span></a
-        >
-        <!-- <a mat-button [routerLink]="'/activities'"> Logout </a> -->
-      </mat-toolbar-row>
-    </mat-toolbar>
-  
+    <a mat-button [routerLink]="'/activities'">
+      <span class="material-icons">
+        login
+      </span></a
+    >
+    <!-- <a mat-button [routerLink]="'/activities'"> Logout </a> -->
+  </mat-toolbar-row>
+</mat-toolbar>
 
-  <div><router-outlet></router-outlet></div>
-
+<div><router-outlet></router-outlet></div>

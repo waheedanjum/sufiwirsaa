@@ -10,6 +10,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
+import { ImageViewerModule } from '@hallysonh/ngx-imageviewer';
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,8 +27,10 @@ import { MatButtonModule } from '@angular/material/button';
     MatListModule,
     MatButtonModule,
     MatIconModule,
+    ImageViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+
