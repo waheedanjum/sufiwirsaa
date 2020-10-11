@@ -9,7 +9,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "server": "nodemon index.js",
-    "start:server": "concurrently --kill-others \"npm run server\" \"npm run start\""
+    "start:server": "concurrently --kill-others \"npm run server\" \"npm run start\"",
+    "prod-build-dev": "ng build --prod --build-optimizer",
+    "prod-build-staging": "ng build --prod --configuration=staging --build-optimizer"
   },
   "private": true,
   "dependencies": {
